@@ -3,11 +3,10 @@ I. Exploration locale en solo
 1. Affichage d’informations sur la pile TCP/IP locale
 Interface Wifi :
 commande : ipconfig /all
-````
    Description. . . . . . . . . . . . . . : Realtek 8821CE Wireless LAN 802.11ac PCI-E NIC
    Adresse physique . . . . . . . . . . . : 90-E8-68-62-F0-A7
    Adresse IPv4. . . . . . . . . . . . . .: 10.33.17.12 
-````
+
 Interface Ethernet :
 Je ne possède pas de carte Ethernet
 
@@ -31,7 +30,7 @@ Utilisez l’interface graphique de votre OS pour changer d’adresse IP :
 
 Il est possible que vous perdiez l’accès internet :
 J’ai perdu l’accès à Internet en changeant d’Ip, le nouvel Ip que j’ai sélectionné appartenait déjà à quelqu’un alors il a la priorité car il était connecté avant moi je n’ai donc pas pu me connecter.
-](https://)
+![](https://i.imgur.com/2gJzWFb.png)
 
 II. Exploration locale en duo
 Owkay. Vous savez à ce stade :
@@ -128,7 +127,7 @@ sur MacOS : toute façon vous avez pas de ports RJ, si ? :o (google it sinon)
 🌞Tester l’accès internet
 pour tester la connectivité à internet on fait souvent des requêtes simples vers un serveur internet connu
 essayez de ping l’adresse IP 1.1.1.1, c’est un serveur connu de CloudFlare (demandez-moi si vous comprenez pas trop la démarche)
-
+![](https://i.imgur.com/m0dWc7l.png)
 
 ip a                                                    
 2: enp3s0: 
@@ -269,10 +268,12 @@ le firewall du PC serveur devra avoir un firewall activé et un netcat qui fonct
 
 Panneau de configuration > Tous les Panneaux de configuration > Pare-feu Windows Defender >> Paramètre avancé
 Règles Pare feu
+![](https://i.imgur.com/v0dUxHt.png)
 
 
 Créé une règle qui accepte les ping imcp
 Règles IMCP
+![](https://i.imgur.com/9rF6n9S.png)
 
 
 III. Manipulations d’autres outils/protocoles côté client
