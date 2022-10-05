@@ -3,9 +3,11 @@ I. Exploration locale en solo
 1. Affichage d’informations sur la pile TCP/IP locale
 Interface Wifi :
 commande : ipconfig /all
+````
    Description. . . . . . . . . . . . . . : Realtek 8821CE Wireless LAN 802.11ac PCI-E NIC
    Adresse physique . . . . . . . . . . . : 90-E8-68-62-F0-A7
    Adresse IPv4. . . . . . . . . . . . . .: 10.33.17.12 
+````
 
 Interface Ethernet :
 Je ne possède pas de carte Ethernet
