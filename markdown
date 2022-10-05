@@ -3,10 +3,11 @@ I. Exploration locale en solo
 1. Affichage d’informations sur la pile TCP/IP locale
 Interface Wifi :
 commande : ipconfig /all
-
+````
    Description. . . . . . . . . . . . . . : Realtek 8821CE Wireless LAN 802.11ac PCI-E NIC
    Adresse physique . . . . . . . . . . . : 90-E8-68-62-F0-A7
    Adresse IPv4. . . . . . . . . . . . . .: 10.33.17.12 
+````
 Interface Ethernet :
 Je ne possède pas de carte Ethernet
 
@@ -350,9 +351,10 @@ une requête DNS. Identifiez dans la capture le serveur DNS à qui vous posez la
 prenez moi des screens des trames en question
 on va prendre l’habitude d’utiliser Wireshark souvent dans les cours, pour visualiser ce qu’il se passe
 IMCP
-
+![](https://i.imgur.com/qjYosHv.png)
 
 NETCAT
-
+![](https://i.imgur.com/KMXhQDk.png)
 
 DNS (nslookup)
+![](https://i.imgur.com/QNA86jJ.png)
