@@ -37,7 +37,8 @@ Durée approximative des boucles en millisecondes :
 ````
 
 ### Wireshark it
-lien wireshark 
+Ping Wireshark 
+
 
 ## II. ARP my bro
 ### Check the ARP table
@@ -181,6 +182,7 @@ Interface : 172.16.0.3 --- 0x30
 ````
 
 ## Wireshark it
-dossier 2 wireshark 
+ARP Wireshark 
 
 ## III. DHCP you too my brooo
+DHCP Wireshark
