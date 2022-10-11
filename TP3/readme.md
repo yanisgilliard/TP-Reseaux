@@ -64,6 +64,25 @@ Première partie simple, on va avoir besoin de 2 VMs.
   - une commande pour voir la MAC de `marcel` dans la table ARP de `john`
   - et une commande pour afficher la MAC de `marcel`, depuis `marcel`
 
+John ping vers Marcel 
+````
+[root@John ~]# ip neigh show
+10.3.1.1 dev ens36 lladdr 00:50:56:c0:00:01 REACHABLE
+
+[root@John ~]# ping 10.3.1.12
+PING 10.3.1.12 (10.3.1.12) 56(84) bytes of data.
+64 bytes from 10.3.1.12: icmp_seq=1 ttl=64 time=0.406 ms
+64 bytes from 10.3.1.12: icmp_seq=2 ttl=64 time=0.568 ms
+^C
+--- 10.3.1.12 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1027ms
+rtt min/avg/max/mdev = 0.406/0.487/0.568/0.081 ms
+
+[root@John ~]# ip neigh show
+10.3.1.12 dev ens36 lladdr 00:0c:29:c2:87:4f REACHABLE
+10.3.1.1 dev ens36 lladdr 00:50:56:c0:00:01 REACHABLE
+````
+
 ### 2. Analyse de trames
 
 🌞**Analyse de trames**
