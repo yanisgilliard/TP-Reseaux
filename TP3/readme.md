@@ -167,8 +167,6 @@ rtt min/avg/max/mdev = 0.675/0.998/1.335/0.262 ms
 
 ````
 
-![THE SIZE](./pics/thesize.png)
-
 ### 2. Analyse de trames
 
 🌞**Analyse des échanges ARP**
@@ -182,13 +180,13 @@ rtt min/avg/max/mdev = 0.675/0.998/1.335/0.262 ms
 
 Par exemple (copiez-collez ce tableau ce sera le plus simple) :
 
-| ordre | type trame  | IP source | MAC source              | IP destination | MAC destination            |
-|-------|-------------|-----------|-------------------------|----------------|----------------------------|
-| 1     | Requête ARP | x         | `marcel` `AA:BB:CC:DD:EE` | x              | Broadcast `FF:FF:FF:FF:FF` |
-| 2     | Réponse ARP | x         | ?                       | x              | `marcel` `AA:BB:CC:DD:EE`    |
-| ...   | ...         | ...       | ...                     |                |                            |
-| ?     | Ping        | ?         | ?                       | ?              | ?                          |
-| ?     | Pong        | ?         | ?                       | ?              | ?                          |
+| ordre | type trame  | IP source | MAC source                | IP destination | MAC destination            |
+|-------|-------------|-----------|---------------------------|----------------|----------------------------|
+| 1     | Requête ARP | x         | `john` `AA:BB:CC:DD:EE`   | x              | Broadcast `FF:FF:FF:FF:FF` |
+| 2     | Réponse ARP | x         |`router``00:0c:29:4c:26:07`| x              | `john` `AA:BB:CC:DD:EE`    |
+| ...   | ...         | ...       | ...                       |                |                            |
+| ?     | Ping        | 10.3.1.11 |`router``00:0c:29:4c:26:07`|10.3.1.12       |`Marcel``00:0c:29:c2:87:4f` |
+| ?     | Pong        | 10.3.1.12 |`Marcel``00:0c:29:c2:87:4f`|10.3.1.11       |`router``00:0c:29:4c:26:07` |
 
 > Vous pourriez, par curiosité, lancer la capture sur `john` aussi, pour voir l'échange qu'il a effectué de son côté.
 
