@@ -38,6 +38,7 @@ Changement d'IP :
 
 Etape 9 :
 ```` [rocky@ip-172-31-27-226 ~]$ sudo vi /etc/sysctl.conf ````
+````
 # sysctl settings are defined through files in
 # /usr/lib/sysctl.d/, /run/sysctl.d/, and /etc/sysctl.d/.
 #
@@ -49,5 +50,6 @@ Etape 9 :
 #
 # For more information, see sysctl.conf(5) and sysctl.d(5).
 net.ipv4.ip_forward=1
+````
 
 Etape 10 : image.png 
