@@ -26,12 +26,13 @@ Etape 7 :
 
 Etape 8 :
 ```` [rocky@ip-172-31-27-226 ~]$ sudo vi /etc/wireguard/wg0.conf ````
- 
+```` 
 [Interface]
 PrivateKey = kAsF6+2JjCLXfrwpTrEvTtBZjfNl5/6fCbN1pXPFDEQ=
 Address = 10.8.0.1/24
 ListenPort = 51820
 SaveConfig = true 
+````
 
 Changement d'IP :
 ```` PS C:\Users\yanis> ssh rocky@54.226.120.206 ````
@@ -52,4 +53,10 @@ Etape 9 :
 net.ipv4.ip_forward=1
 ````
 
-Etape 10 : image.png 
+Etape 10 : 
+```` 
+[rocky@ip-172-31-27-226 ~]$ sudo firewall-cmd --zone=public --add-port=51820/udp --permanent
+sudo: firewall-cmd: command not found
+[rocky@ip-172-31-27-226 ~]$ sudo firewall-cmd --zone=internal --add-interface=wg0 --permanent
+sudo: firewall-cmd: command not found 
+````
