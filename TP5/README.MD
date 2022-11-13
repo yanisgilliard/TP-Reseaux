@@ -2,21 +2,28 @@ TP5 : VPN
 
 Etape 1 :
 ```` PS C:\Users\yanis> ssh rocky@54.226.120.206 ````
+
 Etape 2 :
 ```` PS C:\Users\yanis> ssh-keygen -t rsa -b 4096 ```` 
+
 Etape 3 :
 ```` [rocky@ip-172-31-27-226 ~]$ sudo dnf install elrepo-release epel-release ````
 ```` [rocky@ip-172-31-27-226 ~]$ sudo dnf install kmod-wireguard wireguard-tools ````
+
 Etape 4 : 
 ```` [rocky@ip-172-31-27-226 ~]$ wg genkey | sudo tee /etc/wireguard/private.key ````
+
 Etape 5 :
 ```` [rocky@ip-172-31-27-226 ~]$ sudo chmod go= /etc/wireguard/private.key ````
 ```` [rocky@ip-172-31-27-226 ~]$ wg genkey | sudo tee /etc/wireguard/private.key ````
+
 Etape 6 :
 ```` [rocky@ip-172-31-27-226 ~]$ wg genkey | sudo tee /etc/wireguard/private.key ````
+
 Etape 7 :
 ```` [rocky@ip-172-31-27-226 ~]$ sudo chmod go= /etc/wireguard/private.key ````
 ```` [rocky@ip-172-31-27-226 ~]$ sudo cat /etc/wireguard/private.key | wg pubkey | sudo tee /etc/wireguard/public.key ````
+
 Etape 8 :
 ```` [rocky@ip-172-31-27-226 ~]$ sudo vi /etc/wireguard/wg0.conf ````
  
@@ -28,6 +35,7 @@ SaveConfig = true
 
 Changement d'IP :
 ```` PS C:\Users\yanis> ssh rocky@54.226.120.206 ````
+
 Etape 9 :
 ```` [rocky@ip-172-31-27-226 ~]$ sudo vi /etc/sysctl.conf ````
 # sysctl settings are defined through files in
